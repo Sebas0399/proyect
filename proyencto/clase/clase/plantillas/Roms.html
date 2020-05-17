@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom ROM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body background="Images/3492.jpg">
+    <h1 id="Titulo">Redmi 6a</h1>
+	<p id="Descripcion">Custom ROMS</p>
+    <section class="cont flex text-center">
+        <div class="columna">
+            <h2>AospExtended v5.8</h2>
+            <img class="ro" src="Images/aexlogo.2eedd523.png" alt="">
+                <p>Changelog :</p>
+                <p>1. June 5 Security Patch</p>
+                <p>2. Fixed Sms (Not Tested Yet)</p>
+                <p>3. Fixed Calls (Not Testet)</p>
+                <p>4. Kernel Upstreamed To v4.9.84</p>
+                <p>5. Some Other Performance Improvememt !</p>
+                <p>6. Fixed Offline Charging</p>
+                <p>7. Fixed Double Tap To Wake !</p>
+                <p>8. Added All Network Type Option In Preferred Network Type !</p>
+                <p>9. Some UnderHood Changes</p>
+                <a href="https://drive.google.com/file/d/18q4Bk7QRoFUKdO-bfrkiYoYO7sMdEEPo/view" class="btn-descarga">Download</a>
+                <button class="btn-descarga" onclick="guia()" id="bt1">Guide</button>
+                <div class="guide" id="guia">  
+                                                                
+                </div>
+                <div class="guide">
+                    <h2>Credits</h2>
+                    <p>Wulan17</p>
+                    <p> Samar</p>
+                    <p>Zain Arbani</p>
+                   <p>Phhushon</p> 
+                   <p>lordutkarsh</p>
+                </div>
+                
+        </div>
+        <div class="columna">
+                <h2>Pixel Experience Oreo</h2>
+                <img class="ro" src="Images/logo_p.png" alt="">
+                <p>Changelog :</p>
+                <p>1. Fix Offline Charging</p>
+                <p>2. Added All Network Type Option </p>
+                <p>In Preferred Network Type</p>
+                <p>3. Some Improvement</p>
+                <p>4. Added Custom Kernel </p>
+                <p>5. Upstreamed Kernel To 4.9.79</p>
+                <p>6. Fixed Double Tap To Wake </p>
+                <p>7. Some Underhood Changes</p>
+                <p>8. Included Gaps</p>
+                <a href="https://drive.google.com/file/d/1ypsy60VyN_JdteZOTCJw_syqlEQtIBro/view"class="btn-descarga">Download</a>
+                <button class="btn-descarga"onclick="guia2()" id="bt2">Guide</button>
+                <div class="guide" id="guia2" onclick="guia"></div>
+                <div class="guide">
+                        <h2>Credits</h2>
+                        <p>Wulan17</p>
+                        <p> Samar</p>
+                        <p>Zain Arbani</p>
+                       <p>Phhushon</p> 
+                       <p>lordutkarsh</p>
+                    </div>       
+        </div>     
+        <script>
+            function guia(){
+            var guias=["1. Go to twrp","2. Wipe data, cache, dalvik, system","3. Flash rom",
+                "4. Flash magisk","5. Reboot","6. Flash dolby from magisk","7. Reboot" ]
+                
+                var tite=document.createElement("h2");
+                var xd=document.createTextNode("How to Install :")
+                tite.appendChild(xd);
+                document.getElementById("guia").appendChild(tite)
+            for(var i=0;i<=6;i++){
+                var element=document.createElement("p");
+                var contenido=document.createTextNode(guias[i]);
+                element.appendChild(contenido);
+                document.getElementById("guia").appendChild(element)
+                var boton=document.getElementById("bt1").disabled=true;
+                
+            }  
+
+            }
+            function guia2(){
+            var guias=["1. Go to twrp","2. Wipe data, cache, dalvik, system","3. Flash rom",
+                "4. Flash magisk","5. Reboot","6. Flash dolby from magisk","7. Reboot" ]
+               
+                var tite=document.createElement("h2");
+                var xd=document.createTextNode("How to Install :")
+                tite.appendChild(xd);
+                document.getElementById("guia2").appendChild(tite)
+            for(var i=0;i<=6;i++){
+                var element=document.createElement("p");
+                var contenido=document.createTextNode(guias[i]);
+                element.appendChild(contenido);
+                document.getElementById("guia2").appendChild(element)
+               
+                var boton2=document.getElementById("bt2").disabled=true;
+            }  
+
+            }
+        </script>    
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Proyecto</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="shorcut icon"type="image/x-icon" href="Images/favicon.ico">
+</head>
+<body background="Images/3492.jpg">
+	<h1 id="Titulo"> </h1>
+    <p id="Descripcion">Development Page</p>
+    {% if nombre_persona == "Juan" %}
+    <h1>El curso existe</h1>
+    {%endif%}
+    <h2>C mamo o no :{{nombre_persona}} {{apellido_persona}}</h2>
+
+    <h3>Fecha y hora actuales = {{fecha_actual}}</h3>
+    <h1><strong>Temas del Curso</strong></h1>
+    <p>
+        {%if temas%}
+        
+            {%for tema in temas%}
+                
+                <p>{{tema}}</p>
+            
+            {%endfor%}
+            {%else%}
+            <p>No hay pe :v</p>
+           
+
+        {%endif%}
+    </p>
+
+<nav>
+		
+		<button class="nav-button" onclick="accion()">{{temas.1}} </button>
+		
+	
+
+</nav>
+<script>
+	
+</script>
+
+
+</body>
+</html>	

@@ -1,0 +1,110 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+#Titulo{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	
+	
+}
+
+#Descripcion{
+	font-size: 20px;
+	color: white;
+	
+	text-align: center;
+}
+.nav-enlace{
+	font-size: 20px;
+	/*background: #5F5755;*/
+	padding: 10px 30px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 20px;
+	color: white;
+	
+}
+.nav-enlace:hover{
+	background:#6174C8;
+}
+nav{
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+img{
+	height:500px ;
+	width: auto;
+	margin: auto;
+	display: block;
+	border-radius: 20px;
+	
+}
+.nav-button{
+	
+	background: #5F5755;
+	color: #fff;
+	padding: 10px 0px;
+	display: none;
+
+}
+.cont{
+	margin: 0px auto;
+	width: 90%;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.text-center{
+	text-align: center;
+}
+.ro{
+	height:100px ;
+	width: auto;
+	margin: auto;
+	display: block;
+	border-radius: 20px;
+	box-shadow: 10px 10px blanchedalmond;
+
+}
+.columna{
+	background: white;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	
+}
+.btn-descarga{
+	background: grey;
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	display: inline;
+	
+}
+.btn-descarga:hover{
+	background: #6174C8;
+}
+@media(max-width:600px){
+	nav{
+		flex-direction: column;
+	}
+	.nav-enlace{
+		margin: 10px 0px;
+	}
+	.nav-button{
+		display: inline-block;
+		border-radius: 20px;
+	}
+	.desaparece{
+		display: none;
+	}
+	.columna{
+		width: 100%;
+	}
+}
